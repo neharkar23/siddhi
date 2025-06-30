@@ -1,4 +1,4 @@
-'''
+
 from fastapi import APIRouter, HTTPException
 from app.models import RAGRequest, RAGResponse
 from app.services.vector_store import get_vector_store
@@ -54,7 +54,7 @@ def ask(request: RAGRequest):
     except Exception as e:
         logging.exception("Error inside /ask:")
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
-'''
+
 
 '''
 from fastapi import APIRouter, HTTPException
@@ -224,6 +224,7 @@ def ask(request: RAGRequest):
             logging.exception("Error inside /ask:")
             raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 '''
+'''
 
 from fastapi import APIRouter, HTTPException
 from app.models import RAGRequest, RAGResponse
@@ -320,3 +321,4 @@ def ask(request: RAGRequest):
         except Exception as e:
             otel_logger.error(f"[Error] Exception in /ask: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
+'''
