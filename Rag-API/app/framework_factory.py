@@ -324,7 +324,7 @@ class AutoGenFramework(BaseFramework):
             self.autogen = autogen
             logger.info("AutoGen framework initialized successfully")
         except ImportError:
-            raise ImportError("pyautogen package is required for AutoGen framework")
+            raise ImportError("ag2 package is required for AutoGen framework")
 
     def create_rag_chain(self, system_prompt: str = None) -> Any:
         """Create AutoGen agents"""
